@@ -103,3 +103,19 @@ h1{
     letter-spacing: 0.245em;
 }
 
+/* Product Design */
+
+.productDesign img{
+    height: 80vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productDesign p{
+    text-align: center;
+    padding-top: 5vh;
+    font-weight: 600;
+    font-size: 3vh;
+    letter-spacing: 0.245em;
+}
