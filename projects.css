@@ -6,7 +6,7 @@
     font-family: Oxanium, Helvetica, sans-serif;
 }
 
-.flexcontainer{
+.flexContainer{
     display: flex;
     flex-direction: column;
 }
@@ -38,3 +38,33 @@ h1{
     font-size: 10vh;
     letter-spacing: 0.245em;
 }
+
+/* Logo Design */
+
+.logoImages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoImages img{
+    height: 30vh;
+}
+
+.logoText{
+    text-align: center;
+    font-weight: 600;
+    font-size: 5vh;
+    letter-spacing: 0.245em;
+    padding: 20vh;
+}
+
+.logoCaption{
+    text-align: center;
+    padding-top: 5vh;
+    font-weight: 600;
+    font-size: 2vh;
+    letter-spacing: 0.245em;
+}
+
+/* Label Design */
