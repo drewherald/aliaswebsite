@@ -1,4 +1,5 @@
 let button = document.querySelector(".box");
+let plus = document.querySelector(".plus");
 const addition = document.createElement("div");
 addition.classList.add("collapse");
 addition.innerHTML = ` <p> TIMELINE: approximately 3-4 weeks</p>
@@ -33,7 +34,7 @@ addition.innerHTML = ` <p> TIMELINE: approximately 3-4 weeks</p>
 </p>`;
 let collapsed = true;
 
-button.addEventListener("click", function(){
+plus.addEventListener("click", function(){
     if(collapsed){
         button.appendChild(addition);
         collapsed = false;

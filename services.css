@@ -63,7 +63,7 @@ h1{
     flex-direction: column;
 }
 
-.package1{
+.package{
     text-align: center;
     margin-left: 40vh;
     margin-right: 40vh;
@@ -79,7 +79,6 @@ h1{
 }
 
 .box p{
-    cursor: pointer;
     border: none;
     outline: none;
     background-color: white;
@@ -91,7 +90,6 @@ h1{
 
 
 .box{
-    cursor: pointer;
     border: none;
     outline: none;
     background-color: white;
@@ -112,4 +110,13 @@ h1{
 
 #noMark{
     list-style: none;
+}
+
+.plus{
+    background-color: white;
+    max-height: 4vh;
+    position: absolute;
+    right: 45vh;
+    cursor: pointer;
+
 }
