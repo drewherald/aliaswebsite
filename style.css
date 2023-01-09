@@ -51,6 +51,15 @@ nav ul li a{
     color: white;
 }
 
+nav ul li a:hover{
+    color: #898989;
+}
+
+nav div a:hover{
+    color: #898989;
+}
+
+
 .content{
     text-align: left;
     margin-top: 55vh;
@@ -106,7 +115,7 @@ nav ul li a{
 }
 
 .main h4{
-    font-size: 4vh;
+    font-size: 5vh;
     text-align: center;
     font-weight: 500;
 }
@@ -115,7 +124,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 15vw;
+    padding: 7vh 15vw;
     text-align: center;
 
 }
@@ -130,11 +139,22 @@ nav ul li a{
 }
 
 .block h2{
-    font-size: 10vh;
+    font-size: 12vh;
     font-weight: 700;
     letter-spacing: 0.245em;
 }
 
 .block p{
     font-size: 3vh;
+}
+
+.block h3{
+    font-size: 6vh;
+    font-weight: 700;
+    letter-spacing: 0.245em;
+}
+
+.block img{
+    padding-top: 20vh;
+    padding-bottom: 5vh;
 }
