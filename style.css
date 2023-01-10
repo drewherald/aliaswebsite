@@ -136,6 +136,8 @@ nav div a:hover{
     font-weight: 500;
     padding: 2vh 4vh;
     width: 40vh;
+    border: none;
+    outline: inherit;
 }
 
 .block h2{
@@ -157,6 +159,7 @@ nav div a:hover{
 .block img{
     padding-top: 20vh;
     padding-bottom: 5vh;
+    height: 30vh;
 }
 
 .connect{
