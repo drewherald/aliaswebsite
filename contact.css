@@ -48,3 +48,34 @@ h1{
     font-size: 10vh;
     letter-spacing: 0.245em;
 }
+
+/* Form Styling */
+
+.contactForm{
+    background-color: white;
+    margin-top: 10vh;
+    padding: 5vh 5vw 0vh 5vw;
+}
+
+.contactForm form{
+    background-color: white;
+}
+
+.contactForm form div{
+    background-color: white;
+    padding-bottom: 5vh;
+}
+
+.contactForm form div label{
+    background-color: white;
+    color: #0078FF;
+}
+
+.contactForm form div input{
+    background-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 2px 50px;
+
+}
