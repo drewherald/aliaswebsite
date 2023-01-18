@@ -6,6 +6,11 @@
     font-family: Oxanium, Helvetica, sans-serif;
 }
 
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
 .flexContainer{
     display: flex;
     flex-direction: column;
@@ -54,28 +59,61 @@ h1{
 .contactForm{
     background-color: white;
     margin-top: 10vh;
-    padding: 5vh 5vw 0vh 5vw;
+    padding: 10vh 5vw 0vh 5vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contactForm form{
     background-color: white;
+    padding-left: 25vh;
+}
+
+.contactForm p{
+    color: #0078FF;
+    background-color: white;
+    padding-right: 25vh;
+    text-align: right;
 }
 
 .contactForm form div{
     background-color: white;
     padding-bottom: 5vh;
+
 }
 
 .contactForm form div label{
     background-color: white;
     color: #0078FF;
+    position: absolute;
 }
 
 .contactForm form div input{
     background-color: white;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #000000;
-    padding: 2px 50px;
+    border-bottom: 1px solid #0078FF;
+    padding: 2px 95px 2px 0px;
+    color: #0078FF;
+    font-size: medium;
 
 }
+.contactForm form div input::placeholder{
+    color: #0078FF;
+    font-size: medium;
+}
+
+#comments::placeholder{
+    color: #0078FF;
+    font-size: medium;
+}
+
+.contactForm form div textarea{
+    background-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0078FF;
+    color: #0078FF;
+    font-size: medium;
+}
+
