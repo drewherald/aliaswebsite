@@ -62,6 +62,7 @@ h1{
     padding: 10vh 5vw 0vh 5vw;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10vh;
 }
 
 .contactForm form{
@@ -73,6 +74,12 @@ h1{
     color: #0078FF;
     background-color: white;
     padding-right: 25vh;
+    text-align: right;
+}
+
+.contactForm p label{
+    color: #0078FF;
+    background-color: white;
     text-align: right;
 }
 
@@ -115,5 +122,9 @@ h1{
     border-bottom: 1px solid #0078FF;
     color: #0078FF;
     font-size: medium;
+}
+
+.hidden{
+    display: none;
 }
 

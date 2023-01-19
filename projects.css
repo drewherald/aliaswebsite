@@ -40,6 +40,9 @@ li{
     color: #898989;
 }
 
+.header{
+    padding-bottom: 10vh;
+}
 
 
 h1{
@@ -62,11 +65,16 @@ h1{
 }
 
 .logoText{
-    text-align: center;
+    text-align: left;
     font-weight: 600;
     font-size: 5vh;
     letter-spacing: 0.245em;
-    padding: 20vh;
+    padding: 2vh 5vw 2vh 5vw;
+}
+
+.logoText:hover{
+    color: #898989;
+    cursor: pointer;
 }
 
 .logoCaption{
