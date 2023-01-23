@@ -116,3 +116,49 @@ labelExp.addEventListener("click", function(){
         collapsedTwo = true;
     }
 });
+
+const additionThree = document.createElement("div");
+additionThree.classList.add("collapse");
+additionThree.innerHTML = `
+                <button class="slide-arrow" id="slide-arrow-prev">
+                    &#8249;
+                    </button>
+                    <button class="slide-arrow" id="slide-arrow-next">
+                    &#8250;
+                    </button>
+                    <ul class="slides-container" id="slides-container">
+                    <li class="slide">
+                      <img src="/photos/projects/cdcpackage 1.png" class="image">
+                      <p class="description">sinclair AUTOMOTIVES sinclair AUTOMOTIVES sinclair AUTOMOTIVES sinclair AUTOMOTIVES sinclair AUTOMOTIVES
+                      sinclair AUTOMOTIVES sinclair AUTOMOTIVES sinclair AUTOMOTIVES sinclair AUTOMOTIVES sinclair AUTOMOTIVES
+                      </p>
+                      </li>
+                    </ul>
+`;
+
+let collapsedThree = true;
+
+productExp.addEventListener("click", function(){
+    if(collapsedThree){
+        wrapThree.appendChild(additionThree);
+        collapsedThree = false;
+        const slidesContainer = document.getElementById("slides-container");
+        const slide = document.querySelector(".slide");
+        const prevButton = document.getElementById("slide-arrow-prev");
+        const nextButton = document.getElementById("slide-arrow-next");
+        
+        nextButton.addEventListener("click", () => {
+          const slideWidth = slide.clientWidth;
+          slidesContainer.scrollLeft += slideWidth;
+        });
+        
+        prevButton.addEventListener("click", () => {
+          const slideWidth = slide.clientWidth;
+          slidesContainer.scrollLeft -= slideWidth;
+        });
+    }else{
+        let temp = wrapThree.querySelector(".collapse");
+        temp.remove();
+        collapsedThree = true;
+    }
+});
