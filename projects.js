@@ -18,17 +18,17 @@ addition.innerHTML = `
 </button>
 <ul class="slides-container" id="slides-container">
 <li class="slide">
-  <img src="/photos/projects/sinclairhighperformancelogo 1.png" alt="" class="image">
+  <img src="photos/projects/sinclairhighperformancelogo 1.png" alt="" class="image">
   <p class="description">sinclair automotives
   </p>
   </li>
 <li class="slide">
-  <img src="/photos/projects/daisymarketindividualogo 1.png" alt="" class="image">
+  <img src="photos/projects/daisymarketindividualogo 1.png" alt="" class="image">
   <p class="description">daisy market
   </p>
 </li>
 <li class="slide">
-  <img src="/photos/projects/ss 1.png" alt="" class="image">
+  <img src="photos/projects/ss 1.png" alt="" class="image">
   <p class="description"> ss
   </p>
 </li>
@@ -73,12 +73,12 @@ additionTwo.innerHTML = `
                 </button>
                 <ul class="slides-container" id="slides-container">
                 <li class="slide">
-                  <img src="/photos/projects/INCLUSIONBRANDFINALFRONT 1.png" alt="" class="image">
+                  <img src="photos/projects/INCLUSIONBRANDFINALFRONT 1.png" alt="" class="image">
                   <p class="description">inclusion brand
                   </p>
                   </li>
                 <li class="slide">
-                  <img src="/photos/projects/inclusionbackupdate1 1.png" alt="" class="image">
+                  <img src="photos/projects/inclusionbackupdate1 1.png" alt="" class="image">
                   <p class="description">inclusion brand
                   </p>
                 </li>
@@ -123,7 +123,7 @@ additionThree.innerHTML = `
                     </button>
                     <ul class="slides-container" id="slides-container">
                     <li class="slide">
-                      <img src="/photos/projects/cdcpackage 1.png" class="image">
+                      <img src="photos/projects/cdcpackage 1.png" class="image">
                       <p class="description">captain danger close bourbon
                       </p>
                       </li>
