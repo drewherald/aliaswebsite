@@ -6,6 +6,11 @@
     font-family: Oxanium, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: Oxanium;
+    src: url(fonts/Oxanium.ttf);
+  }
+
 .flexContainer{
     display: flex;
     flex-direction: column;

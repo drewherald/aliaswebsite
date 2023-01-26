@@ -11,6 +11,11 @@
     flex-direction: column;
 }
 
+@font-face {
+    font-family: Oxanium;
+    src: url(fonts/Oxanium.ttf);
+  }
+
 /* Header Styling*/
 
 .list{
