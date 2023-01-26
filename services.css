@@ -1,244 +1,443 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #0078FF;
-    color: white;
-    font-family: Oxanium, Helvetica, sans-serif;
-}
+
 
 @font-face {
     font-family: Oxanium;
     src: url(fonts/Oxanium.ttf);
   }
 
-.flexContainer{
-    display: flex;
-    flex-direction: column;
-}
+  @media only screen and (min-width: 600px) {
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: #0078FF;
+        color: white;
+        font-family: Oxanium, Helvetica, sans-serif;
+    }
 
-/* Header Styling*/
+    /* Header Styling*/
+    
+    .list{
+        text-align: right;
+        position: absolute;
+        right: .75vh;
+        top: .75vh;
+    }
+    
+    .list li{
+        display: inline;
+        font-weight: 500;
+        font-size: 4vh;
+        padding-right: .5vh;
+    }
+    
+    .logo{
+        padding-left: 2vh;
+        height: 25vh;
+    }
+    
+    .header a{
+        text-decoration: none;
+    }
+    
+    .header a:hover{
+        color: #898989;
+    }
+    
+    
+    
+    h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 10vh;
+        letter-spacing: 0.245em;
+    }
+    
+    /* Content Styling */
+    
+    .description{
+        padding: 4vh;
+        padding-left: 40vh;
+        padding-right: 40vh;
+        font-size: 3vh;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .package{
+        text-align: center;
+        margin-left: 40vh;
+        margin-right: 40vh;
+        margin-top: 10vh;
+    }
+    
+    .box h3{
+        font-size: 4vh;
+        color:#0078FF;
+        background-color: white;
+        text-align: center;
+    
+    }
+    
+    .box p{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding-top: 3vh;
+        color: black;
+        font-size: 3vh;
+        text-align: left;
+    }
+    
+    
+    .box{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 10vh;
+        color: black;
+        font-size: 3vh;
+        text-align: center;
+    }
+    
+    .contentList{
+        border: none;
+        outline: none;
+        background-color: white;
+        color: black;
+        font-size: 3vh;
+        text-align: left;
+    }
+    
+    #noMark{
+        list-style: none;
+    }
+    
+    .plus{
+        background-color: white;
+        max-height: 4vh;
+        position: absolute;
+        right: 45vh;
+        cursor: pointer;
+    
+    }
+    
+    /* Package Two */
+    
+    .plustwo{
+        background-color: white;
+        max-height: 4vh;
+        position: absolute;
+        right: 45vh;
+        cursor: pointer;
+    }
+    
+    .boxtwo h3{
+        font-size: 4vh;
+        color:#0078FF;
+        background-color: white;
+        text-align: center;
+    
+    }
+    
+    .boxtwo p{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding-top: 3vh;
+        color: black;
+        font-size: 3vh;
+        text-align: left;
+    }
+    
+    
+    .boxtwo{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 10vh;
+        color: black;
+        font-size: 3vh;
+        text-align: center;
+    }
+    
+    /* Package 3 */
+    
+    .plusthree{
+        background-color: white;
+        max-height: 4vh;
+        position: absolute;
+        right: 45vh;
+        cursor: pointer;
+    }
+    
+    .boxthree h3{
+        font-size: 4vh;
+        color:#0078FF;
+        background-color: white;
+        text-align: center;
+    
+    }
+    
+    .boxthree p{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding-top: 3vh;
+        color: black;
+        font-size: 3vh;
+        text-align: left;
+    }
+    
+    
+    .boxthree{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 10vh;
+        color: black;
+        font-size: 3vh;
+        text-align: center;
+    }
+    
+    /* Alias Designs */
+    
+    .plusfour{
+        background-color: white;
+        max-height: 4vh;
+        position: absolute;
+        right: 45vh;
+        cursor: pointer;
+    }
+    
+    .boxfour h3{
+        font-size: 4vh;
+        color:#0078FF;
+        background-color: white;
+        text-align: center;
+    
+    }
+    
+    .boxfour p{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding-top: 3vh;
+        color: black;
+        font-size: 3vh;
+        text-align: left;
+    }
+    
+    
+    .boxfour{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 10vh;
+        color: black;
+        font-size: 3vh;
+        text-align: center;
+    }
+  }
 
-.list{
-    text-align: right;
-    position: absolute;
-    right: .75vh;
-    top: .75vh;
-}
+  
 
-.list li{
-    display: inline;
-    font-weight: 500;
-    font-size: 4vh;
-    padding-right: .5vh;
-}
+  @media only screen and (max-width: 599px) {
 
-.logo{
-    padding-left: 2vh;
-    height: 25vh;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Oxanium, Helvetica, sans-serif;
+    }
 
-.header a{
-    text-decoration: none;
-}
+    body{
+        background-color: #0078FF;
+    }
 
-.header a:hover{
-    color: #898989;
-}
+    /* Top Bar Styling */
 
+    video{
+        display: none;
+    }
+    .flexContainer{
+        background-color: #0078FF;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .flexContainer div{
+        margin: 0%;
+    }
+    
+    div div a .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10vh;
+    }
+    
+    div div ul li a{
+        font-size: 2vw;
+        text-decoration: none;
+    }
 
+    div div ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2vh 2vh 0vh 2vh;
+    }
 
-h1{
-    text-align: center;
-    font-weight: 600;
-    font-size: 10vh;
-    letter-spacing: 0.245em;
-}
+    div div ul li{
+        display: flex;
+        justify-content: center;
+    }
 
-/* Content Styling */
+    h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 5vw;
+        letter-spacing: 0.245em;
+        padding: 5vh 1vh 5vh 1vh;
 
-.description{
-    padding: 4vh;
-    padding-left: 40vh;
-    padding-right: 40vh;
-    font-size: 3vh;
-}
+    }
 
-.content{
-    display: flex;
-    flex-direction: column;
-}
+    .description{
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 500;
+        padding: 0vh 4vw 0vh 4vw;
+    }
 
-.package{
-    text-align: center;
-    margin-left: 40vh;
-    margin-right: 40vh;
-    margin-top: 10vh;
-}
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .package{
+        text-align: center;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        padding-top: 5vh;
+    }
 
-.box h3{
-    font-size: 4vh;
-    color:#0078FF;
-    background-color: white;
-    text-align: center;
+    .box{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 2vh;
+        color: black;
+        font-size: 3vw;
+        text-align: center;
+    }
 
-}
+    .contentList{
+        border: none;
+        outline: none;
+        background-color: white;
+        color: black;
+        font-size: 3vw;
+        text-align: left;
+    }
+    
+    #noMark{
+        list-style: none;
+    }
+    
+    .plus{
+        background-color: white;
+        max-height: 1vh;
+        position: absolute;
+        right: 4vw;
+        cursor: pointer;
+    }
 
-.box p{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding-top: 3vh;
-    color: black;
-    font-size: 3vh;
-    text-align: left;
-}
+    h3{
+        background-color: white;
+        color:#0078FF;
+    }
 
+    /* Package Two */
+    
+    .plustwo{
+        background-color: white;
+        max-height: 1vh;
+        position: absolute;
+        right: 4vw;
+        cursor: pointer;
+    }
 
-.box{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding: 10vh;
-    color: black;
-    font-size: 3vh;
-    text-align: center;
-}
+    .boxtwo{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 2vh;
+        color: black;
+        font-size: 3vw;
+        text-align: center;
+    }
 
-.contentList{
-    border: none;
-    outline: none;
-    background-color: white;
-    color: black;
-    font-size: 3vh;
-    text-align: left;
-}
+    /* Package Three */
+    
+    .plusthree{
+        background-color: white;
+        max-height: 1vh;
+        position: absolute;
+        right: 4vw;
+        cursor: pointer;
+    }
 
-#noMark{
-    list-style: none;
-}
+    .boxthree{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 2vh;
+        color: black;
+        font-size: 3vw;
+        text-align: center;
+    }
 
-.plus{
-    background-color: white;
-    max-height: 4vh;
-    position: absolute;
-    right: 45vh;
-    cursor: pointer;
+    /* Alias Designs */
 
-}
+    .plusfour{
+        background-color: white;
+        max-height: 1vh;
+        position: absolute;
+        right: 4vw;
+        cursor: pointer;
+    }
 
-/* Package Two */
+    .boxfour{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding: 2vh;
+        color: black;
+        font-size: 3vw;
+        text-align: center;
+    }
 
-.plustwo{
-    background-color: white;
-    max-height: 4vh;
-    position: absolute;
-    right: 45vh;
-    cursor: pointer;
-}
+    .boxfour p{
+        border: none;
+        outline: none;
+        background-color: white;
+        padding-top: 2vh;
+        color: black;
+        font-size: 3vw;
+        text-align: left;
+    }
 
-.boxtwo h3{
-    font-size: 4vh;
-    color:#0078FF;
-    background-color: white;
-    text-align: center;
-
-}
-
-.boxtwo p{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding-top: 3vh;
-    color: black;
-    font-size: 3vh;
-    text-align: left;
-}
-
-
-.boxtwo{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding: 10vh;
-    color: black;
-    font-size: 3vh;
-    text-align: center;
-}
-
-/* Package 3 */
-
-.plusthree{
-    background-color: white;
-    max-height: 4vh;
-    position: absolute;
-    right: 45vh;
-    cursor: pointer;
-}
-
-.boxthree h3{
-    font-size: 4vh;
-    color:#0078FF;
-    background-color: white;
-    text-align: center;
-
-}
-
-.boxthree p{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding-top: 3vh;
-    color: black;
-    font-size: 3vh;
-    text-align: left;
-}
-
-
-.boxthree{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding: 10vh;
-    color: black;
-    font-size: 3vh;
-    text-align: center;
-}
-
-/* Alias Designs */
-
-.plusfour{
-    background-color: white;
-    max-height: 4vh;
-    position: absolute;
-    right: 45vh;
-    cursor: pointer;
-}
-
-.boxfour h3{
-    font-size: 4vh;
-    color:#0078FF;
-    background-color: white;
-    text-align: center;
-
-}
-
-.boxfour p{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding-top: 3vh;
-    color: black;
-    font-size: 3vh;
-    text-align: left;
-}
+    .collapseFour{
+        background-color: white;
+    }
 
 
-.boxfour{
-    border: none;
-    outline: none;
-    background-color: white;
-    padding: 10vh;
-    color: black;
-    font-size: 3vh;
-    text-align: center;
-}
+  }
+
