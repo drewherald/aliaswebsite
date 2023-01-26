@@ -130,7 +130,7 @@ const additionfour = document.createElement("div");
 additionfour.classList.add("collapsefour");
 additionfour.innerHTML = ` 
 
-<div style="font-weight: 700; baclground-color=white;">
+<div style="font-weight: 700; background-color=white;">
 <p> TIMELINE: monthly maintenance</p>
 
 <p>

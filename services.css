@@ -254,7 +254,6 @@
     *{
         margin: 0;
         padding: 0;
-        color: white;
         font-family: Oxanium, Helvetica, sans-serif;
     }
 
@@ -271,6 +270,7 @@
         background-color: #0078FF;
         padding: 0;
         width: 100%;
+        color: white;
     }
     
     .flexContainer div{
@@ -287,15 +287,16 @@
     div div ul li a{
         font-size: 2vw;
         text-decoration: none;
+        color: white;
     }
 
-    div div ul {
+    div div .linkz {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 2vh 2vh 0vh 2vh;
     }
 
-    div div ul li{
+    div div .linkz li{
         display: flex;
         justify-content: center;
     }
@@ -438,6 +439,8 @@
         background-color: white;
     }
 
+    .collapseFour ul{
+    }
 
   }
 
