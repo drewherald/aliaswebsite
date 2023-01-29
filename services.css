@@ -249,7 +249,7 @@
 
   
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 600px) {
 
     *{
         margin: 0;
@@ -263,9 +263,7 @@
 
     /* Top Bar Styling */
 
-    video{
-        display: none;
-    }
+    
     .flexContainer{
         background-color: #0078FF;
         padding: 0;
