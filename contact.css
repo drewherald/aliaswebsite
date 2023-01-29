@@ -125,6 +125,12 @@
         color: #0078FF;
         font-size: medium;
     }
+
+    .contactForm p a{
+        color: #0078FF;
+        background-color: white;
+        text-decoration: none;
+    }
     
     .hidden{
         display: none;
@@ -196,6 +202,13 @@
         color: #0078FF;
         background-color: white;
         text-align: center;
+    }
+
+    .contactForm p a{
+        color: #0078FF;
+        background-color: white;
+        text-align: center;
+        text-decoration: none;
     }
 
     .contactForm p label{
