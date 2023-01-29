@@ -307,6 +307,28 @@
         letter-spacing: 0.245em;
     }
 
+    section img {
+        height: 14vh;
+    }
+
+    .collapse{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    button{
+        display: none;
+    }
+
+    .slides-container{
+        list-style: none;
+    }
+
+    .description{
+        padding: 2vh;
+    }
+
 }
 
 
