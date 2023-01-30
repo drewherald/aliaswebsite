@@ -57,7 +57,7 @@ additiontwo.innerHTML = `
     Includes:<br>
     <ul>
         <li class="contentList">Website Questionnaire + Clarity Call</li>
-        <li class="contentList">Wix, Squarespace, WordPress Website Design Including:
+        <li class="contentList">Full-Service Website Design Including:
             <ul>
                 <li class="contentList" id="noMark">- home page design up to 5 basic interior pages 
                 (does not include a shop or scheduling pages)</li>
