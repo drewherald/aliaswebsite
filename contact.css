@@ -1,265 +1,253 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #0078FF;
-    color: white;
-    font-family: Oxanium, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0078ff;
+  color: white;
+  font-family: Oxanium, Helvetica, sans-serif;
 }
 
 @media only screen and (min-width: 600px) {
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
 
-    input:focus,
-    textarea:focus {
-        outline: none;
-    }
-    
-    .flexContainer{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    /* Header Styling*/
-    
-    .list{
-        text-align: right;
-        position: absolute;
-        right: .75vh;
-        top: .75vh;
-    }
-    
-    .list li{
-        display: inline;
-        font-weight: 500;
-        font-size: 4vh;
-        padding-right: .5vh;
-    }
-    
-    .logo{
-        padding-left: 2vh;
-        height: 25vh;
-    }
-    
-    .header a{
-        text-decoration: none;
-    }
-    
-    .header a:hover{
-        color: #898989;
-    }
-    
-    
-    
-    h1{
-        text-align: center;
-        font-weight: 600;
-        font-size: 10vh;
-        letter-spacing: 0.245em;
-    }
-    
-    /* Form Styling */
-    
-    .contactForm{
-        background-color: white;
-        margin-top: 10vh;
-        padding: 10vh 5vw 0vh 5vw;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10vh;
-    }
-    
-    .contactForm form{
-        background-color: white;
-        padding-left: 25vh;
-    }
-    
-    .contactForm p{
-        color: #0078FF;
-        background-color: white;
-        padding-right: 25vh;
-        text-align: right;
-    }
-    
-    .contactForm p label{
-        color: #0078FF;
-        background-color: white;
-        text-align: right;
-    }
-    
-    .contactForm form div{
-        background-color: white;
-        padding-bottom: 5vh;
-    
-    }
-    
-    .contactForm form div label{
-        background-color: white;
-        color: #0078FF;
-        position: absolute;
-    }
-    
-    .contactForm form div input{
-        background-color: white;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #0078FF;
-        padding: 2px 95px 2px 0px;
-        color: #0078FF;
-        font-size: medium;
-    
-    }
-    .contactForm form div input::placeholder{
-        color: #0078FF;
-        font-size: medium;
-    }
-    
-    #comments::placeholder{
-        color: #0078FF;
-        font-size: medium;
-    }
-    
-    .contactForm form div textarea{
-        background-color: white;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #0078FF;
-        color: #0078FF;
-        font-size: medium;
-    }
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .contactForm p a{
-        color: #0078FF;
-        background-color: white;
-        text-decoration: none;
-    }
-    
-    .hidden{
-        display: none;
-    }
-    
+  /* Header Styling*/
 
+  .list {
+    text-align: right;
+    position: absolute;
+    right: 0.75vh;
+    top: 0.75vh;
+  }
+
+  .list li {
+    display: inline;
+    font-weight: 500;
+    font-size: 4vh;
+    padding-right: 0.5vh;
+  }
+
+  .logo {
+    padding-left: 2vh;
+    height: 25vh;
+  }
+
+  .header a {
+    text-decoration: none;
+  }
+
+  .header a:hover {
+    color: #898989;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 10vh;
+    letter-spacing: 0.245em;
+  }
+
+  /* Form Styling */
+
+  .contactForm {
+    background-color: white;
+    margin-top: 10vh;
+    padding: 10vh 5vw 0vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+  }
+
+  .contactForm form {
+    background-color: white;
+    padding-left: 25vh;
+  }
+
+  .contactForm p {
+    color: #0078ff;
+    background-color: white;
+    padding-right: 25vh;
+    text-align: right;
+  }
+
+  .contactForm p label {
+    color: #0078ff;
+    background-color: white;
+    text-align: right;
+  }
+
+  .contactForm form div {
+    background-color: white;
+    padding-bottom: 5vh;
+  }
+
+  .contactForm form div label {
+    background-color: white;
+    color: #0078ff;
+    position: absolute;
+  }
+
+  .contactForm form div input {
+    background-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0078ff;
+    padding: 2px 95px 2px 0px;
+    color: #0078ff;
+    font-size: medium;
+  }
+  .contactForm form div input::placeholder {
+    color: #0078ff;
+    font-size: medium;
+  }
+
+  #comments::placeholder {
+    color: #0078ff;
+    font-size: medium;
+  }
+
+  .contactForm form div textarea {
+    background-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0078ff;
+    color: #0078ff;
+    font-size: medium;
+  }
+
+  .contactForm p a {
+    color: #0078ff;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .flexContainer {
+    background-color: #0078ff;
+    padding: 0;
+    width: 100%;
+    color: white;
+  }
 
-    .flexContainer{
-        background-color: #0078FF;
-        padding: 0;
-        width: 100%;
-        color: white;
-    }
-    
-    .flexContainer div{
-        margin: 0%;
-    }
-    
-    div div a .logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10vh;
-    }
-    
-    div div ul li a{
-        font-size: 2vw;
-        text-decoration: none;
-        color: white;
-    }
+  .flexContainer div {
+    margin: 0%;
+  }
 
-    div div .linkz {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 2vh 2vh 0vh 2vh;
-    }
+  div div a .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vh;
+  }
 
-    div div .linkz li{
-        display: flex;
-        justify-content: center;
-    }
+  div div ul li a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+  }
 
-    h1{
-        text-align: center;
-        font-weight: 600;
-        font-size: 5vw;
-        letter-spacing: 0.245em;
-        padding: 5vh 1vh 5vh 1vh;
+  div div .linkz {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2vh 2vh 0vh 2vh;
+  }
 
-    }
+  div div .linkz li {
+    display: flex;
+    justify-content: center;
+  }
 
-    /* body styling */
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 5vw;
+    letter-spacing: 0.245em;
+    padding: 5vh 1vh 5vh 1vh;
+  }
 
-    .contactForm{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0px 20px 0px;
-    }
+  /* body styling */
 
-    .contactForm form{
-        background-color: white;
-    }
+  .contactForm {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+  }
 
-    .contactForm p{
-        color: #0078FF;
-        background-color: white;
-        text-align: center;
-    }
+  .contactForm form {
+    background-color: white;
+  }
 
-    .contactForm p a{
-        color: #0078FF;
-        background-color: white;
-        text-align: center;
-        text-decoration: none;
-    }
+  .contactForm p {
+    color: #0078ff;
+    background-color: white;
+    text-align: center;
+  }
 
-    .contactForm p label{
-        color: #0078FF;
-        background-color: white;
-    }
+  .contactForm p a {
+    color: #0078ff;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+  }
 
-    .contactForm form div{
-        background-color: white;
-        padding-bottom: 2vh;
-        text-align: center;
-    
-    }
+  .contactForm p label {
+    color: #0078ff;
+    background-color: white;
+  }
 
-    .contactForm form div label{
-        background-color: white;
-        color: #0078FF;
-    }
+  .contactForm form div {
+    background-color: white;
+    padding-bottom: 2vh;
+    text-align: center;
+  }
 
-    .contactForm form div input{
-        background-color: white;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #0078FF;
-        padding: 2px 88px 2px 0px;
-        color: #0078FF;
-        font-size: medium;
-    }
+  .contactForm form div label {
+    background-color: white;
+    color: #0078ff;
+  }
 
-    .contactForm form div input::placeholder{
-        color: #0078FF;
-        font-size: medium;
-    }
+  .contactForm form div input {
+    background-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0078ff;
+    padding: 2px 88px 2px 0px;
+    color: #0078ff;
+    font-size: medium;
+  }
 
-    #comments::placeholder{
-        color: #0078FF;
-        font-size: medium;
-    }
+  .contactForm form div input::placeholder {
+    color: #0078ff;
+    font-size: medium;
+  }
 
-    .contactForm form div textarea{
-        background-color: white;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #0078FF;
-        color: #0078FF;
-        font-size: medium;
-    }
+  #comments::placeholder {
+    color: #0078ff;
+    font-size: medium;
+  }
 
-    .hidden{
-        display: none;
-    }
+  .contactForm form div textarea {
+    background-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #0078ff;
+    color: #0078ff;
+    font-size: medium;
+  }
 
+  .hidden {
+    display: none;
+  }
 }
-

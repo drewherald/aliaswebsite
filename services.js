@@ -159,47 +159,46 @@ Alias add ons include:<br>
 
 let collapsedfour = true;
 
-
-plus.addEventListener("click", function(){
-    if(collapsed){
-        button.appendChild(addition);
-        collapsed = false;
-    }else{
-        let temp = button.querySelector(".collapse");
-        temp.remove();
-        collapsed = true;
-    }
+plus.addEventListener("click", function () {
+  if (collapsed) {
+    button.appendChild(addition);
+    collapsed = false;
+  } else {
+    let temp = button.querySelector(".collapse");
+    temp.remove();
+    collapsed = true;
+  }
 });
 
-plustwo.addEventListener("click", function(){
-    if(collapsedtwo){
-        buttontwo.appendChild(additiontwo);
-        collapsedtwo = false;
-    }else{
-        let temp = buttontwo.querySelector(".collapsetwo");
-        temp.remove();
-        collapsedtwo = true;
-    }
+plustwo.addEventListener("click", function () {
+  if (collapsedtwo) {
+    buttontwo.appendChild(additiontwo);
+    collapsedtwo = false;
+  } else {
+    let temp = buttontwo.querySelector(".collapsetwo");
+    temp.remove();
+    collapsedtwo = true;
+  }
 });
 
-plusthree.addEventListener("click", function(){
-    if(collapsedthree){
-        buttonthree.appendChild(additionthree);
-        collapsedthree = false;
-    }else{
-        let temp = buttonthree.querySelector(".collapsethree");
-        temp.remove();
-        collapsedthree = true;
-    }
+plusthree.addEventListener("click", function () {
+  if (collapsedthree) {
+    buttonthree.appendChild(additionthree);
+    collapsedthree = false;
+  } else {
+    let temp = buttonthree.querySelector(".collapsethree");
+    temp.remove();
+    collapsedthree = true;
+  }
 });
 
-plusfour.addEventListener("click", function(){
-    if(collapsedfour){
-        buttonfour.appendChild(additionfour);
-        collapsedfour = false;
-    }else{
-        let temp = buttonfour.querySelector(".collapsefour");
-        temp.remove();
-        collapsedfour = true;
-    }
+plusfour.addEventListener("click", function () {
+  if (collapsedfour) {
+    buttonfour.appendChild(additionfour);
+    collapsedfour = false;
+  } else {
+    let temp = buttonfour.querySelector(".collapsefour");
+    temp.remove();
+    collapsedfour = true;
+  }
 });
