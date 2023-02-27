@@ -6,6 +6,12 @@
   font-family: Oxanium, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: Oxanium;
+    src: url(fonts/Oxanium.ttf);
+  }
+  
+
 @media only screen and (min-width: 600px) {
   input:focus,
   textarea:focus {
