@@ -12,6 +12,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <script src="contact.js" defer></script>
     <title>Alias Media & Design</title>
   </head>
   <body>
@@ -61,7 +62,7 @@
           to build brand experiences that drive action and create impact.
         </h4>
         <br /><br />
-        <h2>About Us</h2>
+        <h2 class="abt">About Us</h2>
         <br /><br />
         <h3>A leading creative agency based in Lexington, Kentucky that specializes in digital solutions.</h3>
         <br /><br />
@@ -73,9 +74,10 @@
           some of the services that we offer.
         </p>
         <br /><br />
-        <h2>Featured Services</h2>
+        <h2 class="abt">Featured Services</h2>
+        <br /><br />
         <section id="featured">
-          <div>
+          <div class="forty">
             <div>
               <img src="photos/home/brandinglogo1 1.png" alt="" />
               <h5>BRANDING.</h5>
@@ -83,7 +85,7 @@
             <p>Put simply, a brand is the way customers perceive your business. A strong brand helps them know what to expect. 
             Familiarity breeds confidence, and in turn, conversions. So, give your brand the attention it deserves.</p>
           </div>
-          <div>
+          <div class="forty">
             <div>
               <img src="photos/home/social media logo1 1.png" alt="" />
               <h5>DIGITAL<br>MARKETING.</h5>
@@ -91,7 +93,7 @@
             <p>A successful social media campaign is one that further defines and bolsters your brand, engages your audience, 
               and grows customer base. Welcome to ALIAS!</p>
           </div>
-          <div>
+          <div class="forty">
             <div>
               <img src="photos/home/webdesign1 1.png" alt="" />
               <h5>WEB DESIGN.</h5>
@@ -104,21 +106,92 @@
         </section>
 
         <h2>Projects</h2>
-
+        <br /><br />
         <h2>Alias Packages</h2>
+        <br /><br />
         <p>
           As professionals in our field, we provide professional, creative and results-driven strategies to help your business grow.
            See the full range of solutions detailed below, and get in touch to find out how we can help.
         </p>
+        <br /><br />
+        <section id="projects">
+          <div class="drop">
+            
+              <h5>BRANDING</h5>
+              <p>This package includes all the essential tools to create a uniformed visual identity for your brand.</p>
+              <ul>
+                <li>2 Original Brand Concepts</li>
+                <li>Logo Design</li>
+                <li>Client Feedback/3 Revision Rounds</li>
+                <li>Timeline: 3 Weeks</li>
+              </ul>
+              <a href="contact.html" class="connect"><button>Get Started</button></a>
+          </div>
+         
+          <div class="drop">
+              <h5>WEB DESIGN</h5>
+              <p>This package includes all the essential tools to create a uniformed visual identity for your brand.</p>
+              <ul>
+                <li>2 Original Brand Concepts</li>
+                <li>Logo Design</li>
+                <li>Client Feedback/3 Revision Rounds</li>
+                <li>Timeline: 3 Weeks</li>
+              </ul>
+              <a href="contact.html" class="connect"><button>Get Started</button></a>
+          </div>
+        
+          <div class="drop">
+              <h5>SOCIAL MEDIA</h5>
+              <p>This package includes all the essential tools to create a uniformed visual identity for your brand.</p>
+              <ul>
+                <li>2 Original Brand Concepts</li>
+                <li>Logo Design</li>
+                <li>Client Feedback/3 Revision Rounds</li>
+                <li>Timeline: 3 Weeks</li>
+              </ul>
+              <a href="contact.html" class="connect"><button>Get Started</button></a>
+          </div>
+          
+         
+        </section>
 
-       
-       
-       
-       
+        
+        
        
         
-        <a href="contact.html" class="connect"><button>Connect</button></a>
       </div>
     </div>
+    <section id="contact">
+      <h2 class="abt">Lets Collaborate</h2>
+      <br /><br />
+
+      <div class="contactForm">
+        <form action="https://formspree.io/f/xjvdgrlj" method="POST" id="contactForm">
+            <div>
+                <input type="text" id="name" name="name" minlength="2 required" placeholder="name">
+            </div>
+            <div>
+                <input type="email" id="email" name="email" minlength="2 required" placeholder="email">
+            </div>
+            <div>
+                <input type="number" id="phone" name="phone" minlength="9 required" placeholder="phone">
+            </div>
+            <div class="live">
+                <div class="comments">
+                    <textarea name="comments" id="comments" cols="30" rows="1" placeholder="comments"></textarea>
+                </div>
+            </div>
+            <input type="submit" id="submit-form" value="Submit" class="hidden" />
+        </form>
+        <p> aliasmediadesignco@gmail.com 
+            <br><br>
+            <a href="tel:+1-859-806-0406">(859) 806-0406</a>
+            <br><br>
+            <a href="tel:+1-859-317-1475">(859) 317-1475</a>
+            <br><br> <br><br> <br><br>
+            <label for="submit-form" tabindex="0">+ submit message</label>
+        </p>
+    </div>
+    </section>
   </body>
 </html>
