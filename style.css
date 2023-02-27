@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Oxanium, Roboto, Helvetica, sans-serif;
-  color: white;
 }
 
 @font-face {
@@ -79,6 +78,7 @@
   .content {
     text-align: left;
     margin-top: 55vh;
+    color: white;
   }
 
   .content h1 {
@@ -126,13 +126,13 @@
   /* Main Page Styles */
 
   .main {
-    background-color: #0078ff;
     display: flex;
     flex-direction: column;
+    color: #005CFE;
   }
 
   .main h4 {
-    font-size: 5vh;
+    font-size: 4vh;
     text-align: center;
     font-weight: 500;
   }
@@ -157,9 +157,9 @@
   }
 
   .block h2 {
-    font-size: 12vh;
-    font-weight: 700;
-    letter-spacing: 0.245em;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
   }
 
   .block p {
@@ -167,19 +167,47 @@
   }
 
   .block h3 {
-    font-size: 6vh;
-    font-weight: 700;
-    letter-spacing: 0.245em;
-  }
-
-  .block img {
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-    height: 30vh;
+    font-weight: 800;
+    font-size: 36px;
+    color: black;
   }
 
   .connect {
     padding: 30vh 0vw 10vh 0vw;
+  }
+
+  #featured{
+    display: flex;
+  }
+
+  #featured div{
+    padding: 0px 40px 0px 40px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  #featured div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #featured div div h5{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.245em;
+    text-align: center;
+  }
+
+  #featured div p{
+    font-size: 2vh;
+  }
+
+  #featured div div img{
+    height: 6vh;
+    text-align: center;
+    padding-right: 20px;
   }
 }
 
