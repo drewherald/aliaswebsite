@@ -349,7 +349,7 @@
     color: white;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #0078ff;
+    border-bottom: 1px solid white;
     color: #0078ff;
     font-size: medium;
   }
@@ -436,6 +436,8 @@
     cursor: pointer;
     text-decoration: none;
   }
+
+  
 }
 
 @media only screen and (max-width: 599px) {
@@ -518,6 +520,7 @@
     outline: inherit;
     display: flex;
     justify-content: center;
+    background-color: white;
   }
 
   .block h2 {
@@ -535,12 +538,13 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 50vh 4vw 0vh 4vw;
+    padding: 300px 4vw 0vh 4vw;
   }
 
   .connect {
     padding: 1vh 2vh;
-    margin: 5vh 6vw 5vh 6vw;
+    margin: 30px 15px 15px 15px;
+    text-decoration: none;
   }
 
   p{
@@ -609,4 +613,160 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Packages */
+
+  #projects{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+    justify-items: center;
+  }
+
+  #projects div{
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: 260px;
+    justify-content: space-between;
+    background-color: #005CFE;
+   
+  }
+
+  #projects div h5{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 0.245em;
+    text-align: center;
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  h2{
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    color: #005CFE;
+    text-align: center;
+  }
+
+  .drop{
+    box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;  
+    margin: 0px 0px 75px 0px;
+    color: white;
+
+  }
+  
+  .drop p{
+    font-size: 15px;
+    padding: 10px 0 30px 0;
+    color: white;
+  }
+
+  .drop ul li{
+    padding-bottom: 15px;
+  }
+
+
+  .abt{
+    padding-top: 150px;
+  }
+
+  /* Contact */
+
+  .contactForm {
+    background-color: #005CFE !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    border-top-right-radius: 21px;
+    border-top-left-radius: 21px;
+    text-align: left;
+    padding: 5vh 0vw 40px 4vw;
+  }
+
+  #contact h2{
+    font-size: 25px;
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    padding: 0vh 0vw 0vh 4vw;
+  }
+
+  .contactForm form {
+    background-color: #005CFE !important;
+    color: white;
+  }
+
+  .contactForm p {
+    background-color: #005CFE !important;
+    color: white;
+  }
+
+  .contactForm p label {
+    background-color: #005CFE !important;
+    color: white;
+    text-align: right;
+  }
+
+  .contactForm form div {
+    background-color: #005CFE !important;
+    color: white;
+    padding-bottom: 5vh;
+  }
+
+  .contactForm form div label {
+    background-color: #005CFE !important;
+    color: white;
+    position: absolute;
+  }
+
+  .contactForm form div input {
+    background-color: #005CFE !important;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 2px 50vw 2px 0px;
+    font-size: medium;
+  }
+  .contactForm form div input::placeholder {
+    background-color: #005CFE !important;
+    color: white;
+    font-size: medium;
+  }
+
+  #comments::placeholder {
+    background-color: #005CFE !important;
+    color: white;
+    font-size: medium;
+  }
+
+  .contactForm form div textarea {
+    background-color: #005CFE !important;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #0078ff;
+    font-size: medium;
+    padding: 2px 27vw 2px 0px;
+  }
+
+  .contactForm p a {
+    background-color: #005CFE !important;
+    color: white;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
 }
