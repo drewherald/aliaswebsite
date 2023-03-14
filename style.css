@@ -113,7 +113,7 @@
   }
 
   .icons img {
-    width: 10vh;
+    width: 80px;
   }
 
   #background-video {
@@ -142,7 +142,7 @@
   .main {
     display: flex;
     flex-direction: column;
-    color: #005CFE;
+    color: black;
   }
 
   .main h4 {
@@ -215,6 +215,8 @@
     font-size: 24px;
     line-height: 40px;
     letter-spacing: 0.245em;
+    color: #005CFE;
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
   }
 
   #featured div p{
@@ -269,11 +271,11 @@
   
   .drop p{
     font-size: 15px;
-    padding: 50px 0 50px 0;
+    padding: 25px 0 25px 0;
   }
 
   .drop ul{
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .abt{
@@ -329,7 +331,8 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
-    padding: 2px 95px 2px 0px;
+    padding: 2px 0px 2px 0px;
+    width: 275px;
     font-size: medium;
   }
   .contactForm form div input::placeholder {
@@ -352,6 +355,7 @@
     border-bottom: 1px solid white;
     color: #0078ff;
     font-size: medium;
+    width: 275px;
   }
 
   .contactForm p a {
@@ -365,12 +369,23 @@
     display: none;
   }
 
+  .abt{
+    letter-spacing: 0.145em;
+  }
+
   /* Projects */
 
   #proj{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+
+  #proj h2{
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 0.145em;
+    padding-top: 75px;
   }
 
   #proOne{
@@ -392,8 +407,14 @@
     font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
     }
 
-  #proOne img{
+  .firstFeature{
     height: 250px;
+    width: 432.98px;
+  }
+
+  .secondFeature{
+    height: 250px;
+    width: 432.98px;
   }
 
   #proTwo{
@@ -415,12 +436,8 @@
     font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
     }
 
-  #proTwo img{
-    height: 500px;
-  }
-
   .projPad{
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
   }
 
   .projConnect{
@@ -435,14 +452,55 @@
     color: white;
     cursor: pointer;
     text-decoration: none;
+    display: none;
   }
 
   .arrow{
     max-width: 30px;
     max-height: 30px;
     padding: 0 50px 0 50px;
+    cursor: pointer;
   }
-  
+
+  .mobileArrow{
+    display: none;
+    position: relative;
+  }
+
+  /* Footer */
+
+  #footer{
+    background-color: #005CFE;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding-left: 50px;
+  }
+
+  #footer div{
+    display: flex;
+    align-items: center;
+  }
+
+  #footer img{
+    height: 50px;
+    padding: 0px 0px 7px 0px;
+  }
+
+  #twitter{
+    margin-right: 50px;
+  }
+
+  .footIcon{
+    display: flex;
+  }
+
+  /* packages */
+
+  #text{
+    letter-spacing: 0.145em;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -468,12 +526,16 @@
   }
 
   .desk{
-    display: none;
+    display: none !important;
   }
 
   .topContent {
     padding: 0;
     width: 100%;
+  }
+
+  #featured div div h5{
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
   }
 
   .topContent div {
@@ -512,6 +574,7 @@
     font-size: 3vw;
     font-weight: 500;
     padding: 10vh 0 0 0;
+    color: black;
   }
 
   .block button {
@@ -537,6 +600,7 @@
 
   .block p {
     font-size: 3vw;
+    color: black;
   }
 
   .block {
@@ -567,6 +631,11 @@
     padding: 10px 0 10px 0;
   }
 
+  .forty div h5{
+    color: #005CFE;
+  }
+  
+
   /* Projects */
   
   #proOne{
@@ -590,6 +659,7 @@
     color: white;
     cursor: pointer;
     text-decoration: none;
+    display: none;
   }
 
   #proOne img{
@@ -619,6 +689,18 @@
     margin-right: auto;
   }
 
+  .arrow{
+    max-width: 20px;
+    max-height: 30px;
+    padding: 0 50px 50px 50px;
+    cursor: pointer;
+  }
+
+  .mobileArrow{
+    display: flex;
+  }
+
+
   /* Packages */
 
   #projects{
@@ -643,7 +725,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 40px;
-    letter-spacing: 0.245em;
+    letter-spacing: 0.145em;
     text-align: center;
     font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -656,6 +738,8 @@
     line-height: 80px;
     color: #005CFE;
     text-align: center;
+    letter-spacing: 0.145em;
+
   }
 
   .drop{
@@ -737,7 +821,8 @@
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
-    padding: 2px 50vw 2px 0px;
+    padding: 2px 0vw 2px 0px;
+    width: 90vw;
     font-size: medium;
   }
   .contactForm form div input::placeholder {
@@ -760,7 +845,8 @@
     border-bottom: 1px solid white;
     color: #0078ff;
     font-size: medium;
-    padding: 2px 27vw 2px 0px;
+    width: 90vw;
+    padding: 2px 0vw 2px 0px;
   }
 
   .contactForm p a {
@@ -772,6 +858,43 @@
 
   .hidden {
     display: none;
+  }
+
+  .abt{
+    letter-spacing: 0.145em;
+  }
+
+  /*footer*/
+
+  #footer{
+    background-color: #005CFE;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  #footer div{
+    display: flex;
+    align-items: center;
+  }
+
+  #footer div p{
+    color: #FFFFFF;
+  }
+
+  #footer img{
+    height: 50px;
+    padding: 0px 0px 7px 0px;
+  }
+
+  #twitter{
+    margin-right: 10px;
+  }
+
+  .footIcon{
+    display: flex;
   }
 
 }
