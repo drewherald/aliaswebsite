@@ -889,6 +889,10 @@
     display: none;
   }
 
+  #myLinks div{
+    position: absolute;
+  }
+
   #myLinks li {
     list-style: none;
     margin-left: 20px;
