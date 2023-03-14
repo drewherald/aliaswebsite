@@ -194,3 +194,17 @@ for(let i=1;i<=9;i++){
 }
 
 });
+
+//hamburger menu mobile
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y = document.querySelector(".whoa");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.src = "photos/backIMG.png";
+  } else {
+    x.style.display = "block";
+    y.src = "photos/backIMG.jpg";
+  }
+ 
+}
