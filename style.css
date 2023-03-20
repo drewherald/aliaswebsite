@@ -19,6 +19,70 @@
   src: url(fonts/Oxanium700.ttf);
 }
 
+#Crescentia1{
+  display: inline;
+}
+
+#Crescentia2{
+  display: none;
+}
+
+#Crescentia3{
+  display: none;
+}
+
+#Crescentia4{
+  display: none;
+}
+
+#Crescentia5{
+  display: none;
+}
+
+#Crescentia6{
+  display: none;
+}
+
+#Crescentia7{
+  display: none;
+}
+
+#Payflow1{
+  display: inline;
+}
+
+#Payflow2{
+  display: none;
+}
+
+#Payflow3{
+  display: none;
+}
+
+#Payflow4{
+  display: none;
+}
+
+#Payflow5{
+  display: none;
+}
+
+#Payflow6{
+  display: none;
+}
+
+#Payflow7{
+  display: none;
+}
+
+#Payflow8{
+  display: none;
+}
+
+#Payflow9{
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   .topContent {
     width: 100%;
@@ -674,9 +738,7 @@
     height: auto;
     width: 250px;
     padding-top: 50px;
-    display: flex;
     justify-content: center;
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -690,9 +752,7 @@
     height: auto;
     width: 250px;
     padding-top: 50px;
-    display: flex;
     justify-content: center;
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -708,7 +768,17 @@
     display: flex;
   }
 
+  #partnerOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  #partnerTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* Packages */
 
   #projects{
@@ -864,7 +934,7 @@
     text-decoration: none;
   }
 
-  .hidden {
+  #submit-form{
     display: none;
   }
 

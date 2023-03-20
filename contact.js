@@ -17,21 +17,23 @@ let backArrow = document.getElementById("backArrow");
 let frontArrow = document.getElementById("frontArrow");
 let oneCounter = 1;
 const proOne = document.getElementById("proOne");
+let oldCount;
 
 backArrow.addEventListener("click", function(){
 
     if(oneCounter!=1){
+      oldCount = oneCounter;
       oneCounter--;
     }else if(oneCounter===1){
+      oldCount = oneCounter;
       oneCounter = 7;
     }
     for(let i=1;i<=7;i++){
-      let oldPic = document.querySelector(".firstFeature");
       if(oneCounter===i){
-        const newPic = document.createElement("img");
-        newPic.src = `photos/crescentia/Crescentia${i}.png`;
-        newPic.classList.add("firstFeature");
-        proOne.replaceChild(newPic, oldPic);
+        const newPic = document.querySelector(`#Crescentia${i}`);
+        const oldPic = document.querySelector(`#Crescentia${oldCount}`);
+        oldPic.style.display = "none";
+        newPic.style.display = "inline";
       }
     }
    
@@ -42,17 +44,18 @@ backArrow.addEventListener("click", function(){
 frontArrow.addEventListener("click", function(){
 
   if(oneCounter!=7){
+    oldCount = oneCounter;
     oneCounter++;
   }else if(oneCounter===7){
+    oldCount = oneCounter;
     oneCounter = 1;
   }
   for(let i=1;i<=7;i++){
-    let beforePic = document.querySelector(".firstFeature");
     if(oneCounter===i){
-      const nextPic = document.createElement("img");
-      nextPic.src = `photos/crescentia/Crescentia${i}.png`;
-      nextPic.classList.add("firstFeature");
-      proOne.replaceChild(nextPic, beforePic);
+      const newPic = document.querySelector(`#Crescentia${i}`);
+      const oldPic = document.querySelector(`#Crescentia${oldCount}`);
+      oldPic.style.display = "none";
+      newPic.style.display = "inline";
     }
   }
  
@@ -65,17 +68,18 @@ let frontArrowmob = document.getElementById("frontArrowmob");
 backArrowmob.addEventListener("click", function(){
 
     if(oneCounter!=1){
+      oldCount = oneCounter;
       oneCounter--;
     }else if(oneCounter===1){
+      oldCount = oneCounter;
       oneCounter = 7;
     }
     for(let i=1;i<=7;i++){
-      let oldPic = document.querySelector(".firstFeature");
       if(oneCounter===i){
-        const newPic = document.createElement("img");
-        newPic.src = `photos/crescentia/Crescentia${i}.png`;
-        newPic.classList.add("firstFeature");
-        proOne.replaceChild(newPic, oldPic);
+        const newPic = document.querySelector(`#Crescentia${i}`);
+        const oldPic = document.querySelector(`#Crescentia${oldCount}`);
+        oldPic.style.display = "none";
+        newPic.style.display = "inline";
       }
     }
    
@@ -86,17 +90,18 @@ backArrowmob.addEventListener("click", function(){
 frontArrowmob.addEventListener("click", function(){
 
   if(oneCounter!=7){
+    oldCount = oneCounter;
     oneCounter++;
   }else if(oneCounter===7){
+    oldCount = oneCounter;
     oneCounter = 1;
   }
   for(let i=1;i<=7;i++){
-    let beforePic = document.querySelector(".firstFeature");
     if(oneCounter===i){
-      const nextPic = document.createElement("img");
-      nextPic.src = `photos/crescentia/Crescentia${i}.png`;
-      nextPic.classList.add("firstFeature");
-      proOne.replaceChild(nextPic, beforePic);
+      const newPic = document.querySelector(`#Crescentia${i}`);
+      const oldPic = document.querySelector(`#Crescentia${oldCount}`);
+      oldPic.style.display = "none";
+      newPic.style.display = "inline";
     }
   }
  
@@ -107,23 +112,25 @@ frontArrowmob.addEventListener("click", function(){
 let rearArrow = document.getElementById("rearArrow");
 let forwardArrow = document.getElementById("forwardArrow");
 let twoCounter = 1;
+let twoOld;
 const proTwo = document.getElementById("proTwo");
 
 
 rearArrow.addEventListener("click", function(){
 
     if(twoCounter!=1){
+      twoOld = twoCounter;
       twoCounter--;
     }else if(twoCounter===1){
+      twoOld = twoCounter;
       twoCounter = 9;
     }
     for(let i=1;i<=9;i++){
-      let oldPic = document.querySelector(".secondFeature");
       if(twoCounter===i){
-        const newPic = document.createElement("img");
-        newPic.src = `photos/payflow/payflow${i}.png`;
-        newPic.classList.add("secondFeature");
-        proTwo.replaceChild(newPic, oldPic);
+        const newPic = document.querySelector(`#Payflow${i}`);
+        const oldPic = document.querySelector(`#Payflow${twoOld}`);
+        oldPic.style.display = "none";
+        newPic.style.display = "inline";
       }
     }
    
@@ -134,17 +141,18 @@ rearArrow.addEventListener("click", function(){
 forwardArrow.addEventListener("click", function(){
 
   if(twoCounter!=9){
+    twoOld = twoCounter;
     twoCounter++;
   }else if(twoCounter===9){
+    twoOld = twoCounter;
     twoCounter = 1;
   }
   for(let i=1;i<=9;i++){
-    let beforePic = document.querySelector(".secondFeature");
     if(twoCounter===i){
-      const nextPic = document.createElement("img");
-      nextPic.src = `photos/payflow/payflow${i}.png`;
-      nextPic.classList.add("secondFeature");
-      proTwo.replaceChild(nextPic, beforePic);
+        const newPic = document.querySelector(`#Payflow${i}`);
+        const oldPic = document.querySelector(`#Payflow${twoOld}`);
+        oldPic.style.display = "none";
+        newPic.style.display = "inline";
     }
   }
  
@@ -158,17 +166,19 @@ let forwardArrowmob = document.getElementById("forwardArrowmob");
 rearArrowmob.addEventListener("click", function(){
 
   if(twoCounter!=1){
+    twoOld = twoCounter;
     twoCounter--;
   }else if(twoCounter===1){
+    twoOld = twoCounter;
     twoCounter = 9;
   }
   for(let i=1;i<=9;i++){
     let oldPic = document.querySelector(".secondFeature");
     if(twoCounter===i){
-      const newPic = document.createElement("img");
-      newPic.src = `photos/payflow/payflow${i}.png`;
-      newPic.classList.add("secondFeature");
-      proTwo.replaceChild(newPic, oldPic);
+        const newPic = document.querySelector(`#Payflow${i}`);
+        const oldPic = document.querySelector(`#Payflow${twoOld}`);
+        oldPic.style.display = "none";
+        newPic.style.display = "inline";
     }
   }
  
@@ -179,17 +189,19 @@ rearArrowmob.addEventListener("click", function(){
 forwardArrowmob.addEventListener("click", function(){
 
 if(twoCounter!=9){
+  twoOld = twoCounter;
   twoCounter++;
 }else if(twoCounter===9){
+  twoOld = twoCounter;
   twoCounter = 1;
 }
 for(let i=1;i<=9;i++){
   let beforePic = document.querySelector(".secondFeature");
   if(twoCounter===i){
-    const nextPic = document.createElement("img");
-    nextPic.src = `photos/payflow/payflow${i}.png`;
-    nextPic.classList.add("secondFeature");
-    proTwo.replaceChild(nextPic, beforePic);
+      const newPic = document.querySelector(`#Payflow${i}`);
+      const oldPic = document.querySelector(`#Payflow${twoOld}`);
+      oldPic.style.display = "none";
+      newPic.style.display = "inline";
   }
 }
 
@@ -208,3 +220,8 @@ function myFunction() {
   }
  
 }
+
+//touch screen functionality
+
+const photoCard = document.querySelector("#partnerOne");
+const cards = Array.from(document.querySelectorAll(".firstFeature")); 
