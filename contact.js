@@ -223,5 +223,82 @@ function myFunction() {
 
 //touch screen functionality
 
+/*
 const photoCard = document.querySelector("#partnerOne");
-const cards = Array.from(document.querySelectorAll(".firstFeature")); 
+const cards = Array.from(document.querySelectorAll(".slide")); 
+
+let isDragging = false,
+  startPos = 0,
+  curTranslate = 0,
+  prevTranslate = 0,
+  animateID = 0,
+  currentIndex = 0;
+
+cards.forEach((slide, index) => {
+  const slideImage = slide;
+  slideImage.addEventListener("dragstart", (e) => e.preventDefault());
+
+  //mobile touch events
+  
+  slide.addEventListener("touchstart", touchStart(index));
+
+  slide.addEventListener("touchend", function touchEnd(){
+    isDragging = false;
+    cancelAnimationFrame(animateID);
+
+    const movedBy = curTranslate - prevTranslate;
+    if(movedBy < -100 && currentIndex < cards.length - 1){
+      currentIndex += 1;
+    };
+
+    if(movedBy > 100 && currentIndex > 0){
+      currentIndex -= 1;
+    };
+
+    setPosByIndex();
+  });
+
+  slide.addEventListener("touchmove", function touchMove(){
+    if(isDragging){
+      const currentPos = getPosX(event);
+      curTranslate = prevTranslate + currentPos - startPos;
+    }
+  });
+});
+
+window.oncontextmenu = function(event){
+  event.preventDefault();
+  return false;
+};
+
+function touchStart(index){
+  return function(event){
+    currentIndex = index;
+    startPos = getPosX(event);
+    console.log(startPos);
+    isDragging = true;
+
+    animateID = requestAnimationFrame(animation);
+  };
+};
+
+function getPosX(event){
+  return event.touches[0].clientX;
+};
+
+function animation(){
+  setSliderPos();
+  if (isDragging){
+    requestAnimationFrame(animation);
+  }
+}
+
+function setSliderPos(){
+  photoCard.style.transform = `translateX(${curTranslate}px)`;
+};
+
+function setPosByIndex(){
+  curTranslate = currentIndex * -window.innerWidth;
+  prevTranslate = curTranslate;
+  setSliderPos();
+}; */
