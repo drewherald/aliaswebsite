@@ -464,10 +464,6 @@
     text-align: left;
   }
 
-  #proOne div{
-    padding-right: 100px;
-  }
-
   #proOne div h5{
     font-weight: 700;
     font-size: 26px;
@@ -491,10 +487,6 @@
     align-items: center;
     justify-content: space-between;
     text-align: left;
-  }
-
-  #proTwo div{
-    padding-right: 100px;
   }
 
   #proTwo div h5{
@@ -534,6 +526,8 @@
     display: none;
     position: relative;
   }
+
+
 
 
   /* Footer */
@@ -714,6 +708,7 @@
   #proOne{
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
   }
 
   .projPad{
@@ -763,10 +758,11 @@
     max-height: 30px;
     padding: 0 50px 50px 50px;
     cursor: pointer;
+    display: hidden;
   }
 
   .mobileArrow{
-    display: flex;
+    display: hidden;
   }
 
   #partnerOne{

@@ -61,51 +61,6 @@ frontArrow.addEventListener("click", function(){
  
 });
 
-//mobile
-let backArrowmob = document.getElementById("backArrowmob");
-let frontArrowmob = document.getElementById("frontArrowmob");
-
-backArrowmob.addEventListener("click", function(){
-
-    if(oneCounter!=1){
-      oldCount = oneCounter;
-      oneCounter--;
-    }else if(oneCounter===1){
-      oldCount = oneCounter;
-      oneCounter = 7;
-    }
-    for(let i=1;i<=7;i++){
-      if(oneCounter===i){
-        const newPic = document.querySelector(`#Crescentia${i}`);
-        const oldPic = document.querySelector(`#Crescentia${oldCount}`);
-        oldPic.style.display = "none";
-        newPic.style.display = "inline";
-      }
-    }
-   
-});
-
-
-
-frontArrowmob.addEventListener("click", function(){
-
-  if(oneCounter!=7){
-    oldCount = oneCounter;
-    oneCounter++;
-  }else if(oneCounter===7){
-    oldCount = oneCounter;
-    oneCounter = 1;
-  }
-  for(let i=1;i<=7;i++){
-    if(oneCounter===i){
-      const newPic = document.querySelector(`#Crescentia${i}`);
-      const oldPic = document.querySelector(`#Crescentia${oldCount}`);
-      oldPic.style.display = "none";
-      newPic.style.display = "inline";
-    }
-  }
- 
-});
 
 //featured partner 2
 
@@ -158,54 +113,6 @@ forwardArrow.addEventListener("click", function(){
  
 });
 
-//mobile
-
-let rearArrowmob = document.getElementById("rearArrowmob");
-let forwardArrowmob = document.getElementById("forwardArrowmob");
-
-rearArrowmob.addEventListener("click", function(){
-
-  if(twoCounter!=1){
-    twoOld = twoCounter;
-    twoCounter--;
-  }else if(twoCounter===1){
-    twoOld = twoCounter;
-    twoCounter = 9;
-  }
-  for(let i=1;i<=9;i++){
-    let oldPic = document.querySelector(".secondFeature");
-    if(twoCounter===i){
-        const newPic = document.querySelector(`#Payflow${i}`);
-        const oldPic = document.querySelector(`#Payflow${twoOld}`);
-        oldPic.style.display = "none";
-        newPic.style.display = "inline";
-    }
-  }
- 
-});
-
-
-
-forwardArrowmob.addEventListener("click", function(){
-
-if(twoCounter!=9){
-  twoOld = twoCounter;
-  twoCounter++;
-}else if(twoCounter===9){
-  twoOld = twoCounter;
-  twoCounter = 1;
-}
-for(let i=1;i<=9;i++){
-  let beforePic = document.querySelector(".secondFeature");
-  if(twoCounter===i){
-      const newPic = document.querySelector(`#Payflow${i}`);
-      const oldPic = document.querySelector(`#Payflow${twoOld}`);
-      oldPic.style.display = "none";
-      newPic.style.display = "inline";
-  }
-}
-
-});
 
 //hamburger menu mobile
 function myFunction() {
@@ -227,6 +134,9 @@ function myFunction() {
 const photoCard = document.querySelector("#partnerOne");
 const cards = Array.from(document.querySelectorAll(".slide")); 
 
+const photoCard2 = document.querySelector("#partnerTwo");
+const cards2 = Array.from(document.querySelectorAll(".slide2")); 
+
 let isDragging = false,
   startPos = 0,
   curTranslate = 0,
@@ -234,6 +144,14 @@ let isDragging = false,
   animateID = 0,
   prevIndex = 7;
   curIndex = 1;
+
+  let isDragging2 = false,
+  startPos2 = 0,
+  curTranslate2 = 0,
+  prevTranslate2 = 0,
+  animateID2 = 0,
+  prevIndex2 = 9;
+  curIndex2 = 1;
 
 cards.forEach((slide, index) => {
   const slideImage = slide;
@@ -248,7 +166,9 @@ cards.forEach((slide, index) => {
     cancelAnimationFrame(animateID);
 
     const movedBy = curTranslate - prevTranslate;
-    if(movedBy < -100 && currentIndex < cards.length - 1){
+    console.log(curTranslate);
+    console.log(prevTranslate)
+    if(movedBy < -100){
 
       if(curIndex!=1){
         prevIndex = curIndex;
@@ -258,7 +178,6 @@ cards.forEach((slide, index) => {
         curIndex = 7;
       }
 
-     
       console.log("back");
       console.log(curIndex);
       console.log(prevIndex);
@@ -289,6 +208,61 @@ cards.forEach((slide, index) => {
   });
 });
 
+cards2.forEach((slide, index) => {
+  const slideImage = slide;
+  slideImage.addEventListener("dragstart", (e) => e.preventDefault());
+
+  //mobile touch events
+  
+  slide.addEventListener("touchstart", touchStart2(index));
+
+  slide.addEventListener("touchend", function touchEnd(){
+    
+    isDragging2 = false;
+    cancelAnimationFrame(animateID2);
+
+    const movedBy2 = curTranslate2 - prevTranslate2;
+
+    if(movedBy2 < -100){
+    
+      if(curIndex2!=1){
+        prevIndex2 = curIndex2;
+        curIndex2--;
+      }else if(curIndex2===1){
+        prevIndex2 = curIndex2;
+        curIndex2 = 9;
+      }
+
+    };
+
+    if(movedBy2 > 100){
+      console.log(curIndex2);
+      console.log(prevIndex2);
+      if(curIndex2!=9){
+        prevIndex2 = curIndex2;
+        curIndex2++;
+      }else if(curIndex2===9){
+        prevIndex2 = curIndex2;
+        curIndex2 = 1;
+      }
+    };
+
+    const newPic = document.querySelector(`#Payflow${curIndex2}`);
+    const oldPic = document.querySelector(`#Payflow${prevIndex2}`);
+    oldPic.style.display = "none";
+    newPic.style.display = "inline";
+
+  });
+
+  slide.addEventListener("touchmove", function touchMove(){
+    if(isDragging2){
+      console.log("in");
+      const currentPos2 = getPosX(event);
+      curTranslate2 = prevTranslate2 + currentPos2 - startPos2;
+    }
+  });
+});
+
 window.oncontextmenu = function(event){
   event.preventDefault();
   return false;
@@ -300,6 +274,17 @@ function touchStart(index){
     startPos = getPosX(event);
     console.log(startPos);
     isDragging = true;
+
+    //animateID = requestAnimationFrame(animation);
+  };
+};
+
+function touchStart2(index){
+  return function(event){
+  
+    startPos2 = getPosX(event);
+    console.log(startPos2);
+    isDragging2 = true;
 
     //animateID = requestAnimationFrame(animation);
   };
@@ -320,8 +305,18 @@ function setSliderPos(){
   photoCard.style.transform = `translateX(${curTranslate}px)`;
 };
 
+function setSliderPos2(){
+  photoCard2.style.transform = `translateX(${curTranslate2}px)`;
+};
+
 function setPosByIndex(){
   curTranslate = currentIndex * -window.innerWidth;
   prevTranslate = curTranslate;
   setSliderPos();
+}; 
+
+function setPosByIndex2(){
+  curTranslate2 = currentIndex * -window.innerWidth;
+  prevTranslate2 = curTranslate2;
+  setSliderPos2();
 }; 
