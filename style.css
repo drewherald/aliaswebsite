@@ -19,7 +19,33 @@
   src: url(fonts/Oxanium700.ttf);
 }
 
+#Crescentia1{
+  display: inline;
+}
 
+#Crescentia2{
+  display: none;
+}
+
+#Crescentia3{
+  display: none;
+}
+
+#Crescentia4{
+  display: none;
+}
+
+#Crescentia5{
+  display: none;
+}
+
+#Crescentia6{
+  display: none;
+}
+
+#Crescentia7{
+  display: none;
+}
 
 #Payflow1{
   display: inline;
@@ -509,33 +535,6 @@
     position: relative;
   }
 
-  #Crescentia1{
-    display: inline;
-  }
-  
-  #Crescentia2{
-    display: none;
-  }
-  
-  #Crescentia3{
-    display: none;
-  }
-  
-  #Crescentia4{
-    display: none;
-  }
-  
-  #Crescentia5{
-    display: none;
-  }
-  
-  #Crescentia6{
-    display: none;
-  }
-  
-  #Crescentia7{
-    display: none;
-  }
 
   /* Footer */
 
@@ -715,7 +714,6 @@
   #proOne{
     display: flex;
     flex-direction: column;
-    padding-bottom: 80px;
   }
 
   .projPad{
@@ -772,12 +770,18 @@
   }
 
   #partnerOne{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
     display: inline-flex;
-    overflow: scroll;
+    overflow: hidden;
     transform: translateX(0);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; */
   }
 
+  
   #partnerTwo{
     display: flex;
     justify-content: center;
@@ -788,13 +792,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    padding: 0px 60px 0px 60px;   
-
   }
 
   .slide img{
-    width: 100%;
   }
 
   /* Packages */
