@@ -223,7 +223,7 @@ function myFunction() {
 
 //touch screen functionality
 
-/*
+
 const photoCard = document.querySelector("#partnerOne");
 const cards = Array.from(document.querySelectorAll(".slide")); 
 
@@ -232,7 +232,8 @@ let isDragging = false,
   curTranslate = 0,
   prevTranslate = 0,
   animateID = 0,
-  currentIndex = 0;
+  prevIndex = 7;
+  curIndex = 1;
 
 cards.forEach((slide, index) => {
   const slideImage = slide;
@@ -248,14 +249,36 @@ cards.forEach((slide, index) => {
 
     const movedBy = curTranslate - prevTranslate;
     if(movedBy < -100 && currentIndex < cards.length - 1){
-      currentIndex += 1;
+
+      if(curIndex!=1){
+        prevIndex = curIndex;
+        curIndex--;
+      }else if(curIndex===1){
+        prevIndex = curIndex;
+        curIndex = 7;
+      }
+
+     
+      console.log("back");
+      console.log(curIndex);
+      console.log(prevIndex);
     };
 
-    if(movedBy > 100 && currentIndex > 0){
-      currentIndex -= 1;
+    if(movedBy > 100){
+      if(curIndex!=7){
+        prevIndex = curIndex;
+        curIndex++;
+      }else if(curIndex===7){
+        prevIndex = curIndex;
+        curIndex = 1;
+      }
     };
 
-    setPosByIndex();
+    const newPic = document.querySelector(`#Crescentia${curIndex}`);
+    const oldPic = document.querySelector(`#Crescentia${prevIndex}`);
+    oldPic.style.display = "none";
+    newPic.style.display = "inline";
+
   });
 
   slide.addEventListener("touchmove", function touchMove(){
@@ -278,7 +301,7 @@ function touchStart(index){
     console.log(startPos);
     isDragging = true;
 
-    animateID = requestAnimationFrame(animation);
+    //animateID = requestAnimationFrame(animation);
   };
 };
 
@@ -286,12 +309,12 @@ function getPosX(event){
   return event.touches[0].clientX;
 };
 
-function animation(){
+/*function animation(){
   setSliderPos();
   if (isDragging){
     requestAnimationFrame(animation);
   }
-}
+} */
 
 function setSliderPos(){
   photoCard.style.transform = `translateX(${curTranslate}px)`;
@@ -301,4 +324,4 @@ function setPosByIndex(){
   curTranslate = currentIndex * -window.innerWidth;
   prevTranslate = curTranslate;
   setSliderPos();
-}; */
+}; 
