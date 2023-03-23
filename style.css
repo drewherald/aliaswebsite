@@ -98,6 +98,11 @@
     display: none;
   }
 
+  .circles{
+    display: none;
+  }
+  
+
   video {
     background-image: linear-gradient(
       rgba(12, 3, 51, 0.3),
@@ -733,7 +738,7 @@
   #proOne img{
     height: auto;
     width: 250px;
-    padding-top: 50px;
+    padding-top: 10px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -747,7 +752,7 @@
   #proTwo img{
     height: auto;
     width: 250px;
-    padding-top: 50px;
+    padding-top: 10px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -766,23 +771,35 @@
   }
 
   #partnerOne{
-
     display: flex;
     justify-content: center;
     align-items: center;
-    /*
-    display: inline-flex;
-    overflow: hidden;
-    transform: translateX(0);
-    transition: transform 0.3s ease-out; */
+    flex-direction: column;
   }
 
-  
+
   #partnerTwo{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
+  
+
+  .circles{
+    display: flex;
+    align-items: start;
+  }
+
+  
+  .circles div img{
+    max-width: 15px;
+    padding: 4px;
+  }; 
+
+
+  
+
 
   .slide{
     display: flex;
@@ -790,9 +807,69 @@
     align-items: center;
   }
 
-  .slide img{
+  #wht1{
+    display: none;
   }
 
+  #blu2{
+    display: none;
+  }
+
+  #blu3{
+    display: none;
+  }
+
+  #blu4{
+    display: none;
+  }
+
+  #blu5{
+    display: none;
+  }
+
+  #blu6{
+    display: none;
+  }
+
+  #blu7{
+    display: none;
+  }
+
+  #whit1{
+    display: none;
+  }
+
+  #blue2{
+    display: none;
+  }
+
+  #blue3{
+    display: none;
+  }
+
+  #blue4{
+    display: none;
+  }
+
+  #blue5{
+    display: none;
+  }
+
+  #blue6{
+    display: none;
+  }
+
+  #blue7{
+    display: none;
+  }
+
+  #blue8{
+    display: none;
+  }
+
+  #blue9{
+    display: none;
+  }
   /* Packages */
 
   #projects{

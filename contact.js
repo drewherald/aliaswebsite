@@ -168,22 +168,12 @@ cards.forEach((slide, index) => {
     const movedBy = curTranslate - prevTranslate;
     console.log(curTranslate);
     console.log(prevTranslate)
+    const whtDots = Array.from(document.querySelectorAll(".circles")); 
+    const bluDots = Array.from(document.querySelectorAll(".circles")); 
+
+
     if(movedBy < -100){
 
-      if(curIndex!=1){
-        prevIndex = curIndex;
-        curIndex--;
-      }else if(curIndex===1){
-        prevIndex = curIndex;
-        curIndex = 7;
-      }
-
-      console.log("back");
-      console.log(curIndex);
-      console.log(prevIndex);
-    };
-
-    if(movedBy > 100){
       if(curIndex!=7){
         prevIndex = curIndex;
         curIndex++;
@@ -193,10 +183,33 @@ cards.forEach((slide, index) => {
       }
     };
 
+    if(movedBy > 100){
+      if(curIndex!=1){
+        prevIndex = curIndex;
+        curIndex--;
+      }else if(curIndex===1){
+        prevIndex = curIndex;
+        curIndex = 7;
+      }
+    };
+
     const newPic = document.querySelector(`#Crescentia${curIndex}`);
     const oldPic = document.querySelector(`#Crescentia${prevIndex}`);
     oldPic.style.display = "none";
     newPic.style.display = "inline";
+
+    console.log(curIndex)
+    console.log(prevIndex)
+
+    let oldDot = document.querySelector(`#blu${prevIndex}`);
+    let newDot = document.querySelector(`#wht${prevIndex}`);
+    let oldDot2 = document.querySelector(`#blu${curIndex}`);
+    let newDot2 = document.querySelector(`#wht${curIndex}`);
+    oldDot.style.display = "none";
+    newDot.style.display = "inline";
+    oldDot2.style.display = "inline";
+    newDot2.style.display = "none";
+
 
   });
 
@@ -225,19 +238,6 @@ cards2.forEach((slide, index) => {
 
     if(movedBy2 < -100){
     
-      if(curIndex2!=1){
-        prevIndex2 = curIndex2;
-        curIndex2--;
-      }else if(curIndex2===1){
-        prevIndex2 = curIndex2;
-        curIndex2 = 9;
-      }
-
-    };
-
-    if(movedBy2 > 100){
-      console.log(curIndex2);
-      console.log(prevIndex2);
       if(curIndex2!=9){
         prevIndex2 = curIndex2;
         curIndex2++;
@@ -247,11 +247,29 @@ cards2.forEach((slide, index) => {
       }
     };
 
+    if(movedBy2 > 100){
+      if(curIndex2!=1){
+        prevIndex2 = curIndex2;
+        curIndex2--;
+      }else if(curIndex2===1){
+        prevIndex2 = curIndex2;
+        curIndex2 = 9;
+      }
+    };
+
     const newPic = document.querySelector(`#Payflow${curIndex2}`);
     const oldPic = document.querySelector(`#Payflow${prevIndex2}`);
     oldPic.style.display = "none";
     newPic.style.display = "inline";
 
+    let oldDot = document.querySelector(`#blue${prevIndex2}`);
+    let newDot = document.querySelector(`#whit${prevIndex2}`);
+    let oldDot2 = document.querySelector(`#blue${curIndex2}`);
+    let newDot2 = document.querySelector(`#whit${curIndex2}`);
+    oldDot.style.display = "none";
+    newDot.style.display = "inline";
+    oldDot2.style.display = "inline";
+    newDot2.style.display = "none";
   });
 
   slide.addEventListener("touchmove", function touchMove(){
@@ -320,3 +338,16 @@ function setPosByIndex2(){
   prevTranslate2 = curTranslate2;
   setSliderPos2();
 }; 
+
+/*dots slider 1 mobile 
+const dots = Array.from(document.querySelectorAll(".circles")); 
+for(let i=1;i>=7;i++){
+dots[i].addEventListener("click", function(){
+  if(i!=1&&i!=7){
+    dots[i].src = "photos/blueCircle.png";
+    dots[i-1].src = "photos/whiteCircle.png"
+  }
+})
+};
+
+*/
