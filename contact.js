@@ -339,15 +339,12 @@ function setPosByIndex2(){
   setSliderPos2();
 }; 
 
-/*dots slider 1 mobile 
-const dots = Array.from(document.querySelectorAll(".circles")); 
-for(let i=1;i>=7;i++){
-dots[i].addEventListener("click", function(){
-  if(i!=1&&i!=7){
-    dots[i].src = "photos/blueCircle.png";
-    dots[i-1].src = "photos/whiteCircle.png"
-  }
-})
-};
+const email = document.getElementById("email");
 
-*/
+email.addEventListener("input", (event) => {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("Please enter a valid email address!");
+  } else {
+    email.setCustomValidity("");
+  }
+});

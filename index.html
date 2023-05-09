@@ -342,17 +342,17 @@
       <div class="contactForm">
         <form action="https://formspree.io/f/xjvdgrlj" method="POST" id="contactForm">
             <div>
-                <input type="text" id="name" name="name" minlength="2 required" placeholder="name">
+                <input type="text" id="name" name="name" minlength="2 required" placeholder="name" required>
             </div>
             <div>
-                <input type="email" id="email" name="email" minlength="2 required" placeholder="email">
+                <input type="email" id="email" name="email" minlength="2 required" placeholder="email" required>
             </div>
             <div>
-                <input type="number" id="phone" name="phone" minlength="9 required" placeholder="phone">
+                <input type="tel" id="phone" name="phone" minlength="9 required" placeholder="phone">
             </div>
             <div class="live">
                 <div class="comments">
-                    <textarea name="comments" id="comments" cols="30" rows="1" placeholder="comments"></textarea>
+                    <textarea name="comments" id="comments" cols="30" rows="1" placeholder="comments"></textarea required>
                 </div>
             </div>
             <input type="submit" id="submit-form" value="Submit" class="hidden"/>
