@@ -572,7 +572,8 @@
   }
 
   .footerPic{
-    height: 70%;
+    height: 5%;
+    margin-right: 10px;
   }
 }
 
@@ -1101,7 +1102,7 @@
     color: #FFFFFF;
   }
 
-  #footer img{
+  #footer .f{
     height: 50px;
     padding: 0px 0px 7px 0px;
   }
@@ -1115,7 +1116,8 @@
   }
 
   .footerPic{
-    height: 70%;
+    height: 30px;
+    padding: 0px 10px 7px 0px;
   }
 
 }
