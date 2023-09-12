@@ -225,6 +225,27 @@
     font-weight: 500;
   }
 
+  .twoCols{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  .twoRows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  #aliasA{
+    object-fit: cover;
+    max-width: 100%;
+
+  }
+
   .block {
     display: flex;
     flex-direction: column;
@@ -234,7 +255,7 @@
   }
 
   .block button {
-    background: #005CFE;
+    background: #0000FF;
     border-radius: 21px;
     font-size: 15px;
     font-weight: 500;
@@ -248,7 +269,7 @@
 
   .block h2 {
     font-weight: 600;
-    font-size: 64px;
+    font-size: 36px;
     line-height: 80px;
   }
 
@@ -257,8 +278,9 @@
   }
 
   .block h3 {
+    font-weight: 900;
+    font-size: 26px;
     font-weight: 800;
-    font-size: 30px;
     color: black;
   }
 
@@ -266,30 +288,27 @@
     padding: 10px;
   }
 
-  #featured{
-    display: flex;
-    text-align: left;
-    gap: 140px;
-  }
-
-  #featured div{
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-  }
-
-
-  #featured div div{
+  .serviceTitle{
     display: flex;
     align-items: center;
+    padding-bottom: 25px;
+  }
+
+ .forty{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
+    text-align: left;
+    
   }
 
   #featured div div h5{
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.245em;
-    color: #005CFE;
+    color: #0000FF;
     font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
   }
 
@@ -332,8 +351,8 @@
     font-weight: 600;
     font-size: 64px;
     line-height: 80px;
-    color: #005CFE;
-    text-align: center;
+    color: #0000FF;
+    text-align: left;
   }
 
   .drop{
@@ -353,13 +372,23 @@
   }
 
   .abt{
-    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .photoCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   /* Contact */
 
   .contactForm {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -369,38 +398,38 @@
   }
 
   .contactForm form {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     padding-left: 25vh;
   }
 
   .contactForm p {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     padding-right: 25vh;
     text-align: right;
   }
 
   .contactForm p label {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     text-align: right;
   }
 
   .contactForm form div {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     padding-bottom: 5vh;
   }
 
   .contactForm form div label {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     position: absolute;
   }
 
   .contactForm form div input {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     background: transparent;
     border: none;
@@ -410,19 +439,19 @@
     font-size: medium;
   }
   .contactForm form div input::placeholder {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     font-size: medium;
   }
 
   #comments::placeholder {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     font-size: medium;
   }
 
   .contactForm form div textarea {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white !important;
     background: transparent;
     border: none;
@@ -433,7 +462,7 @@
   }
 
   .contactForm p a {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     background-color: white;
     text-decoration: none;
@@ -507,7 +536,7 @@
   }
 
   .projConnect{
-    background: #005CFE;
+    background: #0000FF;
     border-radius: 21px;
     font-size: 15px;
     font-weight: 500;
@@ -539,7 +568,7 @@
   /* Footer */
 
   #footer{
-    background-color: #005CFE;
+    background-color: #0000FF;
     display: flex;
     align-items: center;
     color: white;
@@ -699,7 +728,7 @@
   }
 
   p{
-    color: #005CFE;
+    color: #0000FF;
   }
 
   h3{
@@ -714,7 +743,7 @@
   }
 
   .forty div h5{
-    color: #005CFE;
+    color: #0000FF;
   }
   
 
@@ -731,7 +760,7 @@
   }
 
   .projConnect{
-    background: #005CFE;
+    background: #0000FF;
     border-radius: 21px;
     font-size: 15px;
     font-weight: 500;
@@ -896,7 +925,7 @@
     align-items: center;
     width: 260px;
     justify-content: space-between;
-    background-color: #005CFE;
+    background-color: #0000FF;
    
   }
 
@@ -915,7 +944,7 @@
     font-weight: 600;
     font-size: 64px;
     line-height: 80px;
-    color: #005CFE;
+    color: #0000FF;
     text-align: center;
     letter-spacing: 0.145em;
 
@@ -947,7 +976,7 @@
   /* Contact */
 
   .contactForm {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -967,35 +996,35 @@
   }
 
   .contactForm form {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
   }
 
   .contactForm p {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
   }
 
   .contactForm p label {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     text-align: right;
   }
 
   .contactForm form div {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     padding-bottom: 5vh;
   }
 
   .contactForm form div label {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     position: absolute;
   }
 
   .contactForm form div input {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     background: transparent;
     border: none;
@@ -1005,19 +1034,19 @@
     font-size: medium;
   }
   .contactForm form div input::placeholder {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     font-size: medium;
   }
 
   #comments::placeholder {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     font-size: medium;
   }
 
   .contactForm form div textarea {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     background: transparent;
     border: none;
@@ -1029,7 +1058,7 @@
   }
 
   .contactForm p a {
-    background-color: #005CFE !important;
+    background-color: #0000FF !important;
     color: white;
     background-color: white;
     text-decoration: none;
@@ -1085,7 +1114,7 @@
   /*footer*/
 
   #footer{
-    background-color: #005CFE;
+    background-color: #0000FF;
     display: flex;
     align-items: center;
     color: white;
