@@ -217,6 +217,7 @@
     display: flex;
     flex-direction: column;
     color: black;
+    padding: 7vh 0vw;
   }
 
   .main h4 {
@@ -250,7 +251,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7vh 10vw;
+    padding: 0vh 10vw;
     text-align: center;
   }
 
@@ -307,7 +308,30 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 40px;
-    letter-spacing: 0.245em;
+    color: #0000FF;
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
+  }
+
+  #servHead{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0vh 5vw;
+  }
+
+  #servHead h2{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
+  }
+
+  #servHead h5{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 40px;
     color: #0000FF;
     font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
   }
@@ -319,6 +343,10 @@
   #featured div div img{
     height: 6vh;
     padding-right: 20px;
+  }
+
+  #featured{
+    padding: 0 50px 0 50px;
   }
 
   #projects{
@@ -386,6 +414,10 @@
   }
 
   /* Contact */
+
+  #contact h2{
+    text-align: center;
+  }
 
   .contactForm {
     background-color: #0000FF !important;
