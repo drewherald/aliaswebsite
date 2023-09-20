@@ -19,69 +19,18 @@
   src: url(fonts/Oxanium700.ttf);
 }
 
-#Crescentia1{
+#Partner1{
   display: inline;
 }
 
-#Crescentia2{
+#Partner2{
   display: none;
 }
 
-#Crescentia3{
+#Partner3{
   display: none;
 }
 
-#Crescentia4{
-  display: none;
-}
-
-#Crescentia5{
-  display: none;
-}
-
-#Crescentia6{
-  display: none;
-}
-
-#Crescentia7{
-  display: none;
-}
-
-#Payflow1{
-  display: inline;
-}
-
-#Payflow2{
-  display: none;
-}
-
-#Payflow3{
-  display: none;
-}
-
-#Payflow4{
-  display: none;
-}
-
-#Payflow5{
-  display: none;
-}
-
-#Payflow6{
-  display: none;
-}
-
-#Payflow7{
-  display: none;
-}
-
-#Payflow8{
-  display: none;
-}
-
-#Payflow9{
-  display: none;
-}
 
 @media only screen and (min-width: 600px) {
   .topContent {
@@ -252,7 +201,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0vh 10vw;
-    text-align: center;
+    text-align: left;
   }
 
   .block button {
@@ -317,7 +266,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0vh 5vw;
+    padding: 0vh 10vw;
   }
 
   #servHead h2{
@@ -525,7 +474,7 @@
 
   #proOne{
     display: flex;
-    padding: 0 0 100px 0;
+    padding: 30px 0 30px 0;
     justify-content: space-between;
     align-items: center;
     text-align: left;
@@ -539,29 +488,10 @@
     }
 
   .firstFeature{
-    height: 250px;
-    width: 432.98px;
+    height: 500px;
+    width: auto;
   }
 
-  .secondFeature{
-    height: 250px;
-    width: 432.98px;
-  }
-
-  #proTwo{
-    display: flex;
-    padding: 0 0 100px 0;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  #proTwo div h5{
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 40px;
-    font-family: OxaniumBold, Roboto, Helvetica, sans-serif;
-    }
 
   .projPad{
     padding: 50px 0 50px 0;

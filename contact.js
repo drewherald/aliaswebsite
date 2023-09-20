@@ -26,12 +26,12 @@ backArrow.addEventListener("click", function(){
       oneCounter--;
     }else if(oneCounter===1){
       oldCount = oneCounter;
-      oneCounter = 7;
+      oneCounter = 3;
     }
-    for(let i=1;i<=7;i++){
+    for(let i=1;i<=3;i++){
       if(oneCounter===i){
-        const newPic = document.querySelector(`#Crescentia${i}`);
-        const oldPic = document.querySelector(`#Crescentia${oldCount}`);
+        const newPic = document.querySelector(`#Partner${i}`);
+        const oldPic = document.querySelector(`#Partner${oldCount}`);
         oldPic.style.display = "none";
         newPic.style.display = "inline";
       }
@@ -43,17 +43,17 @@ backArrow.addEventListener("click", function(){
 
 frontArrow.addEventListener("click", function(){
 
-  if(oneCounter!=7){
+  if(oneCounter!=3){
     oldCount = oneCounter;
     oneCounter++;
-  }else if(oneCounter===7){
+  }else if(oneCounter===3){
     oldCount = oneCounter;
     oneCounter = 1;
   }
-  for(let i=1;i<=7;i++){
+  for(let i=1;i<=3;i++){
     if(oneCounter===i){
-      const newPic = document.querySelector(`#Crescentia${i}`);
-      const oldPic = document.querySelector(`#Crescentia${oldCount}`);
+      const newPic = document.querySelector(`#Partner${i}`);
+      const oldPic = document.querySelector(`#Partner${oldCount}`);
       oldPic.style.display = "none";
       newPic.style.display = "inline";
     }
@@ -62,56 +62,6 @@ frontArrow.addEventListener("click", function(){
 });
 
 
-//featured partner 2
-
-let rearArrow = document.getElementById("rearArrow");
-let forwardArrow = document.getElementById("forwardArrow");
-let twoCounter = 1;
-let twoOld;
-const proTwo = document.getElementById("proTwo");
-
-
-rearArrow.addEventListener("click", function(){
-
-    if(twoCounter!=1){
-      twoOld = twoCounter;
-      twoCounter--;
-    }else if(twoCounter===1){
-      twoOld = twoCounter;
-      twoCounter = 9;
-    }
-    for(let i=1;i<=9;i++){
-      if(twoCounter===i){
-        const newPic = document.querySelector(`#Payflow${i}`);
-        const oldPic = document.querySelector(`#Payflow${twoOld}`);
-        oldPic.style.display = "none";
-        newPic.style.display = "inline";
-      }
-    }
-   
-});
-
-
-
-forwardArrow.addEventListener("click", function(){
-
-  if(twoCounter!=9){
-    twoOld = twoCounter;
-    twoCounter++;
-  }else if(twoCounter===9){
-    twoOld = twoCounter;
-    twoCounter = 1;
-  }
-  for(let i=1;i<=9;i++){
-    if(twoCounter===i){
-        const newPic = document.querySelector(`#Payflow${i}`);
-        const oldPic = document.querySelector(`#Payflow${twoOld}`);
-        oldPic.style.display = "none";
-        newPic.style.display = "inline";
-    }
-  }
- 
-});
 
 
 //hamburger menu mobile
