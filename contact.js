@@ -84,24 +84,14 @@ function myFunction() {
 const photoCard = document.querySelector("#partnerOne");
 const cards = Array.from(document.querySelectorAll(".slide")); 
 
-const photoCard2 = document.querySelector("#partnerTwo");
-const cards2 = Array.from(document.querySelectorAll(".slide2")); 
 
 let isDragging = false,
   startPos = 0,
   curTranslate = 0,
   prevTranslate = 0,
   animateID = 0,
-  prevIndex = 7;
+  prevIndex = 3;
   curIndex = 1;
-
-  let isDragging2 = false,
-  startPos2 = 0,
-  curTranslate2 = 0,
-  prevTranslate2 = 0,
-  animateID2 = 0,
-  prevIndex2 = 9;
-  curIndex2 = 1;
 
 cards.forEach((slide, index) => {
   const slideImage = slide;
@@ -124,10 +114,10 @@ cards.forEach((slide, index) => {
 
     if(movedBy < -100){
 
-      if(curIndex!=7){
+      if(curIndex!=3){
         prevIndex = curIndex;
         curIndex++;
-      }else if(curIndex===7){
+      }else if(curIndex===3){
         prevIndex = curIndex;
         curIndex = 1;
       }
@@ -139,12 +129,12 @@ cards.forEach((slide, index) => {
         curIndex--;
       }else if(curIndex===1){
         prevIndex = curIndex;
-        curIndex = 7;
+        curIndex = 3;
       }
     };
 
-    const newPic = document.querySelector(`#Crescentia${curIndex}`);
-    const oldPic = document.querySelector(`#Crescentia${prevIndex}`);
+    const newPic = document.querySelector(`#Partner${curIndex}`);
+    const oldPic = document.querySelector(`#Partner${prevIndex}`);
     oldPic.style.display = "none";
     newPic.style.display = "inline";
 
@@ -171,65 +161,6 @@ cards.forEach((slide, index) => {
   });
 });
 
-cards2.forEach((slide, index) => {
-  const slideImage = slide;
-  slideImage.addEventListener("dragstart", (e) => e.preventDefault());
-
-  //mobile touch events
-  
-  slide.addEventListener("touchstart", touchStart2(index));
-
-  slide.addEventListener("touchend", function touchEnd(){
-    
-    isDragging2 = false;
-    cancelAnimationFrame(animateID2);
-
-    const movedBy2 = curTranslate2 - prevTranslate2;
-
-    if(movedBy2 < -100){
-    
-      if(curIndex2!=9){
-        prevIndex2 = curIndex2;
-        curIndex2++;
-      }else if(curIndex2===9){
-        prevIndex2 = curIndex2;
-        curIndex2 = 1;
-      }
-    };
-
-    if(movedBy2 > 100){
-      if(curIndex2!=1){
-        prevIndex2 = curIndex2;
-        curIndex2--;
-      }else if(curIndex2===1){
-        prevIndex2 = curIndex2;
-        curIndex2 = 9;
-      }
-    };
-
-    const newPic = document.querySelector(`#Payflow${curIndex2}`);
-    const oldPic = document.querySelector(`#Payflow${prevIndex2}`);
-    oldPic.style.display = "none";
-    newPic.style.display = "inline";
-
-    let oldDot = document.querySelector(`#blue${prevIndex2}`);
-    let newDot = document.querySelector(`#whit${prevIndex2}`);
-    let oldDot2 = document.querySelector(`#blue${curIndex2}`);
-    let newDot2 = document.querySelector(`#whit${curIndex2}`);
-    oldDot.style.display = "none";
-    newDot.style.display = "inline";
-    oldDot2.style.display = "inline";
-    newDot2.style.display = "none";
-  });
-
-  slide.addEventListener("touchmove", function touchMove(){
-    if(isDragging2){
-      console.log("in");
-      const currentPos2 = getPosX(event);
-      curTranslate2 = prevTranslate2 + currentPos2 - startPos2;
-    }
-  });
-});
 
 window.oncontextmenu = function(event){
   event.preventDefault();
@@ -273,9 +204,7 @@ function setSliderPos(){
   photoCard.style.transform = `translateX(${curTranslate}px)`;
 };
 
-function setSliderPos2(){
-  photoCard2.style.transform = `translateX(${curTranslate2}px)`;
-};
+
 
 function setPosByIndex(){
   curTranslate = currentIndex * -window.innerWidth;
@@ -283,11 +212,7 @@ function setPosByIndex(){
   setSliderPos();
 }; 
 
-function setPosByIndex2(){
-  curTranslate2 = currentIndex * -window.innerWidth;
-  prevTranslate2 = curTranslate2;
-  setSliderPos2();
-}; 
+
 
 const email = document.getElementById("email");
 
